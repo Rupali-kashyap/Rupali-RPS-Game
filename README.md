@@ -1,17 +1,20 @@
 # Rock Paper Scissors Game
+
 import random   #genrate random variable
+
 print("--------------------------------")
 print("Welcome to Rock, Paper, Scissors")
 print("--------------------------------")
 player_win = 0
 computer_win = 0
+
 while True:
     player = input("Enter a choice (rock, paper, scissors): ")
     choices = ["rock", "paper", "scissors"]
     computer = random.choice(choices)
     print(f"\nYou choose {player}, computer choose {computer}.")
     if player == computer: 
-        print(f"Both players selected {player}. \nIt's a tie!")
+        print(f"Both players selected {player}. \nIt's a tie!")        
     elif player == "rock":
         if computer == "scissors":
             print("Rock smashes scissors. \nYou win!")
